@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SectionJS.NET", "SectionJS.NET\SectionJS.NET.csproj", "{64F2E171-20FC-4223-B63B-488C82215D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SectionJS.Test", "SectionJS.Test\SectionJS.Test.csproj", "{95E00A14-A259-41FD-AB77-1F6478C1EEA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64F2E171-20FC-4223-B63B-488C82215D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F2E171-20FC-4223-B63B-488C82215D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F2E171-20FC-4223-B63B-488C82215D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F2E171-20FC-4223-B63B-488C82215D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E00A14-A259-41FD-AB77-1F6478C1EEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E00A14-A259-41FD-AB77-1F6478C1EEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E00A14-A259-41FD-AB77-1F6478C1EEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E00A14-A259-41FD-AB77-1F6478C1EEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
