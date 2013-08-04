@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Web.Mvc;
 using JetBrains.Annotations;
 
@@ -30,27 +31,13 @@ namespace SectionJS.NET
         protected SectionJSModel Model = new SectionJSModel();
 
         /// <summary>
-        /// Controller.ViewBag to pass sectionList.
-        /// </summary>
-        protected dynamic ViewBag;
-
-        /// <summary>
-        /// Gets SectionList from the ViewBag
-        /// </summary>
-        protected Dictionary<string, object> SectionList
-        {
-            get { return ViewBag._SectionList ?? (ViewBag._SectionList = new Dictionary<string, object>()); }
-        }
-
-        /// <summary>
         /// The manager class for handling sections
         /// </summary>
-        /// <param name="viewBag"></param>
-        /// <param name="viewDelegate"></param>
+        /// <param name="viewDelegate">The View method of the Controller
+        /// (it is protected, not accesible, so give it as a delegate)</param>
         public SectionJSManager(Func<string, object, ViewResult> viewDelegate)
         {
             ViewDelegate = viewDelegate;
-            ViewBag = viewBag;
         }
 
         /// <summary>
@@ -74,7 +61,7 @@ namespace SectionJS.NET
         [NotNull]
         public SectionJSManager AddAbs([PathReference(ViewFolder)] string partialViewPath, object model = null)
         {
-            Model.Add(partialViewPath, model);
+            Model.Add("~/Views/" + partialViewPath, model);
 
             return this;
         }
